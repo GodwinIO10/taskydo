@@ -1,0 +1,127 @@
+.input {
+    display: flex;
+    width: 95%;
+    position: relative;
+    align-items: center;
+}
+
+.input_box {
+    width: 100%;
+    border-radius: 50px;
+    padding: 20px 30px;
+    font-style: 25px;
+    border: none;
+    transition: 0.2s;
+    box-shadow: inset 0 0 5px black;
+}
+
+.input_box:focus {
+    box-shadow: 0 0 10px 1000px rgba(0,0,0,0);
+    outline: none;
+}
+
+.input_submit {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 12px;
+    border-radius: 50px;
+    right: 0;
+    border: none;
+    font-size: 15px;
+    background-color: #2f74c0;
+    color: white;
+    transition: 0.2s all;
+    box-shadow: 0 0 10px black;
+}
+
+.input_submit:hover {
+    background-color: #388ae2;
+}
+
+.input_submit:active {
+    transform: scale(0.8);
+    box-shadow: 0 0 5px black;
+}
+
+.container {
+    display: flex;
+    width: 95%;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.todos {
+    display: flex;
+    width: 47.5%;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(226, 148, 2);
+}
+
+.todos_heading {
+    font-size: 30px;
+    color: white;
+
+}
+
+.todos_single {
+    display: flex;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    background-image: url(./images/peach.jpg);
+    transition: 0.2s;
+}
+
+.todos_single:hover {
+    box-shadow: 0 0 5px black;
+    transform: scale(1.04);
+
+}
+
+.todos_single_text {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+}
+
+.todos_single_text:focus {
+    /* outline: none; */
+}
+
+.icon {
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1100px) {
+    .todos {
+        width: 45%;
+    }
+}
+
+@media (max-width: 700px) {
+    .input {
+        width: 95%;
+    }
+    .todos {
+        width: 95%;
+        margin-bottom: 10px;
+    }
+    .container {
+        width: 95%;
+        flex-direction: column;
+    }
+}
+
+.remove {
+    background-color: green;
+}
+
+
