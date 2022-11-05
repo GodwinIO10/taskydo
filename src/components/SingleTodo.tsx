@@ -7,7 +7,7 @@ import { Draggable } from 'react-beautiful-dnd'
 // import { MdDone } from 'react-icons/md'  // another option for AiOutlineCheck
 
 
-// Using type. An interface can be also be used.
+// Using type. An interface can also be used.
 type Props = {
     index: number
     todo: Todos
