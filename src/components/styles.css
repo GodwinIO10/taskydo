@@ -124,4 +124,14 @@
     background-color: green;
 }
 
+.dragactive {
+    background-color: rgb(255, 204, 35);
+}
 
+.dragcomplete {
+    background-color:  rgb(8, 182, 8);
+}
+
+.drag {
+    box-shadow: 0 0 20px black;
+}
